@@ -112,7 +112,27 @@ a {
   color: grey;
 }
 
+h2 {
+  padding: 20px 0;
+}
+
 .products {
   margin: auto;
   width: 95%;
+}
+
+.products__cover {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-size: 14px;
+}
+
+.product {
+
+
 }
