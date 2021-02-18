@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #141922;
+}
+
+.sidebar {
+  background: #000;
+  height: 100vh;
+  width: 250px;
+  float: left;
+  color: #FFF;
+  padding-top: 70px;
+}
+
+section {
+  color: white;
+}
+
+.container {
+  width: calc(100% - 250px);
+  float: left;
+}
+
+.upgrade {
+  background-color: #101010;
+  height: 70px;
+  width: 100%;
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+}
+
+.upgrade button {
+  margin-right: 10px;
+  padding: 8px 30px;
+  border-radius: 20px;
+  background-color: inherit;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid white;
+}
+
+.menubar {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.menubar li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.menubar a {
+  text-decoration: none;
+  color: grey;
+}
