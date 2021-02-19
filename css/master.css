@@ -18,6 +18,8 @@ body {
   padding-top: 70px;
   font-size: 14px;
   padding-left: 20px;
+  overflow: auto;
+  padding-bottom: 90px;
 }
 
 .sidebar i {
@@ -45,10 +47,11 @@ h3 {
 }
 
 .sidebar__user {
-  background-color: #000;
-  position: absolute;
-  bottom: 90px;
+  position: fixed;
+  padding: 10px 0;
+  bottom: 80px;
   width: 200px;
+  background-color: black;
 }
 
 .sidebar__user a {
