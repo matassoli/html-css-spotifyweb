@@ -17,7 +17,7 @@ body {
   color: #FFF;
   padding-top: 70px;
   font-size: 14px;
-  padding-left: 20px;
+  padding-left: 15px;
   overflow: auto;
   padding-bottom: 90px;
 }
@@ -165,13 +165,37 @@ h2 {
   flex-wrap: wrap;
 }
 
-.products__cover img {
-  width: 100%;
-}
-
 .product {
   width: 204px;
   padding: 10px;
+}
+
+.product img {
+  width: 100%;
+  opacity: 1;
+  transition: 0.2s linear;
+}
+
+.product:hover.product img {
+  opacity: 0.3;
+}
+
+.product__img {
+  position: relative;
+}
+
+.product__img i {
+  color: white;
+  font-size: 50px;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+
+.product:hover .product__img i {
+  display: block;
 }
 
 .products p {
@@ -231,4 +255,70 @@ footer a {
   display: flex;
   justify-content: space-between;
   flex-shrink: 0;
+  vertical-align: middle;
+  color: #FFF;
+}
+
+.media__playing {
+  margin-top: 15px;
+  margin-left: 15px;
+  display: flex;
+}
+
+.media__playing img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.media__playing__title {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.media__playing__title i {
+  padding-left: 5px;
+  color: grey;
+}
+
+.media__playing__title small {
+  color: grey;
+  padding-right: 20px;
+}
+
+.media__volume i {
+  padding-right: 15px;
+  font-size: 12px;
+}
+
+.media__progress span {
+  font-size: 8px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.bar {
+  display: inline-block;
+  height: 3px;
+  background-color: grey;
+  border-radius: 10px;
+  vertical-align: top;
+}
+
+.progress__bar {
+  margin-top: 10px;
+  width: 400px;
+}
+
+.bar--active {
+  background-color: #FFF;
+  height: 3px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.volume__bar {
+  width: 100px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
