@@ -11,7 +11,7 @@ body {
 
 .sidebar {
   background: #000;
-  height: 100vh;
+  height: 90vh;
   width: 230px;
   float: left;
   color: #FFF;
@@ -47,7 +47,7 @@ h3 {
 .sidebar__user {
   background-color: #000;
   position: absolute;
-  bottom: 10px;
+  bottom: 90px;
   width: 200px;
 }
 
@@ -68,7 +68,7 @@ section {
 }
 
 .container {
-  width: calc(100% - 250px);
+  width: calc(100% - 230px);
   float: left;
 }
 
@@ -119,20 +119,60 @@ h2 {
 .products {
   margin: auto;
   width: 95%;
+  height: 74vh;
+  overflow: auto;
 }
 
 .products__cover {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  overflow: auto;
 }
 
 h1 {
   font-size: 14px;
 }
 
-.product {
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #1c1c1c;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
 
+.media__controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul {
+  padding-top: 10px;
+  list-style-type: none;
+  display: flex;
+}
+
+footer li {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+footer a {
+  color: #FFF;
+}
+
+.media {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
