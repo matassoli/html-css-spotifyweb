@@ -233,7 +233,6 @@ main:after {
 }
 
 footer {
-  height: 80px;
   width: 100%;
   background-color: #282828;
   position: fixed;
@@ -266,13 +265,13 @@ footer a {
 .media {
   display: flex;
   justify-content: space-between;
-  flex-shrink: 0;
-  vertical-align: middle;
+  align-items: center;
+  height: 80px;
+  width: 100%;
   color: #FFF;
 }
 
 .media__playing {
-  margin-top: 15px;
   margin-left: 15px;
   display: flex;
 }
@@ -297,6 +296,7 @@ footer a {
   color: grey;
   padding-right: 20px;
 }
+
 
 .media__volume i {
   padding-right: 15px;
