@@ -120,7 +120,11 @@ section {
   z-index: 5;
 }
 
-.upgrade button {
+.upgrade__button:hover {
+  transform: scale(1.1);
+}
+
+.upgrade__button {
   margin-right: 10px;
   padding: 8px 30px;
   border-radius: 20px;
@@ -147,6 +151,7 @@ section {
 }
 
 .menubar a:hover:after {
+  color: #FFF;
   content: "";
   position: absolute;
   left: 30%;
@@ -159,6 +164,10 @@ a {
   position: relative;
   text-decoration: none;
   color: grey;
+}
+
+a:hover {
+  color: #FFF;
 }
 
 h2 {
@@ -244,7 +253,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.media__controls i {
+  font-size: 12px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+
+.media__controls .fa-play-circle {
+  font-size: 25px;
+}
+
+.media__controls .fa-play-circle:hover {
+  transform: scale(1.2);
 }
 
 footer ul {
@@ -297,6 +319,14 @@ footer a {
   padding-right: 20px;
 }
 
+.media__playing__title small:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.media__playing__title i:hover {
+  color: #FFF;
+}
 
 .media__volume i {
   padding-right: 15px;
@@ -317,6 +347,22 @@ footer a {
   vertical-align: top;
 }
 
+.bar:hover .bar--active {
+  background-color: #1DB954;
+}
+
+.bar:hover .bar--active::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: -10px;
+  width: 13px;
+  height: 13px;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+
 .progress__bar {
   margin-top: 10px;
   width: 400px;
@@ -327,6 +373,7 @@ footer a {
   height: 3px;
   width: 50px;
   border-radius: 10px;
+  position: relative;
 }
 
 .volume__bar {
