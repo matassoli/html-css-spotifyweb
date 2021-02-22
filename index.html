@@ -15,15 +15,16 @@
 <body>
 
   <main>
-    <img class="logo" src="img/logo.svg" alt="">
+    <img class="logo" src="img/logo.svg" alt=""><img class="logo--small" src="img/logo-small.svg" alt="">
     <div class="sidebar">
-      <ul>
-        <li><a href="#"><img src="img/home.svg" alt="">Home</a></li>
-        <li><a href="#"><img src="img/search.svg" alt="">Cerca</a></li>
-        <li><a href="#"><img src="img/libreria.svg" alt="">La tua libreria</a></li>
+      <ul class="sidebar__icons">
+        <li><a href="#"><img src="img/home.svg" alt=""><span>Home</span></a></li>
+        <li><a href="#"><img src="img/search.svg" alt=""><span>Cerca</span></a></li>
+        <li><a href="#"><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
       </ul>
+
       <h3>Playlist</h3>
-      <ul>
+      <ul class="playlist">
         <li><a href="#"> <i class="fas fa-plus-square"></i>Crea Playlist</a></li>
         <li><a href="#">Nome Playlist</a></li>
         <li><a href="#">Nome Playlist</a></li>
@@ -34,7 +35,7 @@
         <li><a href="#">Nome Playlist</a></li>
       </ul>
       <div class="sidebar__user">
-        <a href="#"> <img src="img/download.svg" alt="">Installa app</a>
+        <a href="#"><img src="img/download.svg" alt=""><span>Installa app</span></a>
         <div class="profile"></div><span>John Doe</span>
       </div>
 
@@ -122,14 +123,14 @@
             <div class="product__img">
               <img src="img/youg.jpeg" alt=""><i class="far fa-play-circle"></i>
             </div>
-            <h1>Heavy Metal</h1>
+            <h1>Artista 1</h1>
             <p>Subtitle</p>
           </div>
           <div class="product">
             <div class="product__img">
               <img src="img/einaudi.jpeg" alt=""><i class="far fa-play-circle"></i>
             </div>
-            <h1>Heavy Metal</h1>
+            <h1>Artista 2</h1>
             <p>Subtitle</p>
           </div>
         </div>
@@ -141,10 +142,10 @@
     <div class="media">
       <div class="media__playing"><img src="img/sinister.jpeg" alt="">
         <div class="media__playing__title">
-          <a href="#"><p>Sinister</p></a>
+          <a href="#">
+            <p>Sinister</p>
+          </a>
           <a href="#"><small>Brano Nome</small></a>
-
-
           <a href="#"><i class="far fa-heart"></i></a>
           <a href="#"><i class="far fa-folder"></i></a>
         </div>

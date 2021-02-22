@@ -30,6 +30,10 @@ body {
   z-index: 2;
 }
 
+.logo--small {
+  display: none;
+}
+
 .sidebar img {
   display: inline-block;
   padding-right: 5px;
@@ -39,10 +43,6 @@ body {
 
 .sidebar i {
   padding-right: 5px;
-}
-
-.sidebar ul {
-  display: inline-block;
 }
 
 .sidebar li {
@@ -91,13 +91,12 @@ h3 {
   background-image: url("../img/profile.svg");
   background-position: 50% 50%;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: sub;
 }
 
 .sidebar__user span {
   font-size: 12px;
   font-weight: 600;
-  vertical-align: super;
 }
 
 section {
@@ -148,6 +147,10 @@ section {
 .menubar li {
   display: inline-block;
   padding-right: 10px;
+}
+
+.menubar a {
+  line-height: 3;
 }
 
 .menubar a:hover:after {
@@ -296,6 +299,7 @@ footer a {
 .media__playing {
   margin-left: 15px;
   display: flex;
+  flex-grow: 0;
 }
 
 .media__playing img {
@@ -328,9 +332,21 @@ footer a {
   color: #FFF;
 }
 
+.media__volume {
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+}
+
 .media__volume i {
   padding-right: 15px;
   font-size: 12px;
+}
+
+.media__progress {
+  display: flex;
+  flex-grow: 0;
+  align-items: baseline;
 }
 
 .media__progress span {
@@ -371,7 +387,7 @@ footer a {
 .bar--active {
   background-color: #FFF;
   height: 3px;
-  width: 50px;
+  width: 25%;
   border-radius: 10px;
   position: relative;
 }
@@ -383,27 +399,69 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  .sidebar {
-    width: 60px;
+  .bar {
+    width: 150px;
   }
 
+  .volume__bar {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .container {
     width: calc(100% - 60px);
   }
 
-  .logo {
-    display: none;
+  .sidebar {
+    width: 60px;
   }
 
   .sidebar h3 {
     display: none;
   }
 
-  .sidebar ul {
+  .logo {
     display: none;
   }
 
   .bar {
     width: 150px;
   }
+
+  .volume__bar {
+    width: 60px;
+  }
+
+  .profile {
+    padding-bottom: 10px;
+  }
+
+  .sidebar__user a {
+    border-bottom: 0;
+  }
+
+  .sidebar__user span {
+    display: none;
+  }
+
+  .logo--small {
+    position: absolute;
+    height: 30px;
+    margin: 15px;
+    display: inline-block;
+  }
+
+  .sidebar__icons span, .playlist {
+    display: none;
+  }
+
+  .sidebar img {
+height: 30px;
+width: auto;
+  }
+  .profile {
+    margin-left: 5px;
+  }
+
 }
