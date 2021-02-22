@@ -7,6 +7,7 @@
 
 body {
   background-color: #141922;
+  overflow: hidden;
 }
 
 .sidebar {
@@ -68,6 +69,7 @@ h3 {
 }
 
 .sidebar__user {
+  height: 70px;
   margin-top: auto;
 }
 
@@ -113,7 +115,9 @@ section {
   display: flex;
   flex-direction: row-reverse;
   height: 70px;
-  width: 100%;
+  opacity: 0.8;
+  position: fixed;
+  width: calc(100% - 230px);
   z-index: 5;
 }
 
@@ -128,7 +132,7 @@ section {
   color: #FFF;
   font-size: 12px;
   font-weight: 700;
-  margin-right: 10px;
+  margin-right: 20px;
   padding: 8px 30px;
   text-transform: uppercase;
 }
@@ -136,6 +140,7 @@ section {
 .menubar {
   font-size: 12px;
   font-weight: 600;
+  margin-top: 70px;
   padding: 15px 0 20px 0;
   text-align: center;
   text-transform: uppercase;
@@ -199,6 +204,7 @@ h2 {
 }
 
 .product {
+  cursor: pointer;
   padding: 10px;
   width: 204px;
 }
@@ -341,6 +347,10 @@ footer a {
   color: #FFF;
 }
 
+.media__playing__icons {
+  display: block;
+}
+
 .media__volume {
   align-items: center;
   display: flex;
@@ -422,6 +432,10 @@ footer a {
     width: calc(100% - 60px);
   }
 
+  .upgrade {
+    width: calc(100% - 60px);
+  }
+
   .sidebar {
     width: 60px;
   }
@@ -443,6 +457,7 @@ footer a {
   }
 
   .profile {
+    margin-left: 5px;
     padding-bottom: 10px;
   }
 
@@ -469,8 +484,10 @@ footer a {
     height: 30px;
     width: auto;
   }
+}
 
-  .profile {
-    margin-left: 5px;
+@media screen and (min-height: 810px) {
+  .media {
+    height: 10vh;
   }
 }

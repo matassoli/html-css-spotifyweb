@@ -13,16 +13,14 @@
 </head>
 
 <body>
-
   <main>
     <img class="logo" src="img/logo.svg" alt=""><img class="logo--small" src="img/logo-small.svg" alt="">
-    <div class="sidebar">
+    <aside class="sidebar">
       <ul class="sidebar__icons">
         <li><a href="#"><img src="img/home.svg" alt=""><span>Home</span></a></li>
         <li><a href="#"><img src="img/search.svg" alt=""><span>Cerca</span></a></li>
         <li><a href="#"><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
       </ul>
-
       <h3>Playlist</h3>
       <ul class="playlist">
         <li><a href="#"> <i class="fas fa-plus-square"></i>Crea Playlist</a></li>
@@ -38,8 +36,7 @@
         <a href="#"><img src="img/download.svg" alt=""><span>Installa app</span></a>
         <div class="profile"></div><span>John Doe</span>
       </div>
-
-    </div>
+    </aside>
 
     <section class="container">
       <div class="upgrade"><a href="#"><button class="upgrade__button">Effettua l'upgrade</button></a></div>
@@ -53,7 +50,6 @@
           <li><a href="#">Scopri</a></li>
         </ul>
       </nav>
-
       <div class="products">
         <h2>Recently Played</h2>
         <div class="products__cover">
@@ -146,8 +142,10 @@
             <p>Sinister</p>
           </a>
           <a href="#"><small>Brano Nome</small></a>
-          <a href="#"><i class="far fa-heart"></i></a>
-          <a href="#"><i class="far fa-folder"></i></a>
+          <div class="media__playing__icons">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
+          </div>
         </div>
       </div>
       <div class="media__controls">
@@ -173,10 +171,8 @@
           <div class="bar--active"></div>
         </div>
       </div>
-
     </div>
   </footer>
 
 </body>
-
 </html>
